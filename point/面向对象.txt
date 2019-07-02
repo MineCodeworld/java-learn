@@ -1,0 +1,29 @@
+Interface
+
+实现
+implements实现一个接口用的关键字，用来实现接口中定义的抽象方法。实现一个接口，必须实现接口中的所有方法。
+
+接口可以被多重实现，抽象类只能被单一继承
+接口只有定义，抽象类可以有定义和实现
+
+People是一个接口 他里面有say这个方法。 
+public interface People{ 
+	public void say(); 
+} 
+
+但是接口没有方法体。只能通过一个具体的类去实现其中的方法体。 
+public class Chinese implements People{ 
+	public void say() { 
+		System.out.println(” 你好！”); 
+	} 
+} 
+
+接口的调用： 
+People chinese = new Chinese() ; 
+chinese.say(); 
+
+
+implements 	只需要实现，不可以修改
+vt. 执行，履行；贯彻，落实；使生效
+extends 	需要实现，可以被修改、扩展性好
+v. 延伸；扩充；继承（extend的第三人称单数形式）
